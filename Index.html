@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akhilesh Saini</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+/* Background particles */
+
+body::before{
+content:"";
+position:fixed;
+width:200%;
+height:200%;
+background:radial-gradient(circle,#00ff8840 1px, transparent 1px);
+background-size:40px 40px;
+animation:moveBg 20s linear infinite;
+z-index:-1;
+}
+
+@keyframes moveBg{
+0%{transform:translate(0,0);}
+100%{transform:translate(-200px,-200px);}
+}
+
+/* Header */
+
+header{
+padding:60px 20px;
+}
+
+/* Profile image */
+
+.profile{
+width:190px;
+height:190px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #00ff88;
+box-shadow:0 0 30px #00ff88;
+animation:float 4s ease-in-out infinite;
+}
+
+/* Floating animation */
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+100%{transform:translateY(0);}
+}
+
+h1{
+margin-top:20px;
+font-size:42px;
+color:#00ff88;
+}
+
+.tagline{
+margin-top:10px;
+font-size:18px;
+}
+
+/* Cards */
+
+.section{
+padding:40px 20px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:#111;
+margin:15px;
+padding:25px;
+width:260px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,255,136,0.3);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 0 35px #00ff88;
+}
+
+/* Instagram button */
+
+.insta-btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 25px;
+background:#00ff88;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:30px;
+transition:0.3s;
+}
+
+.insta-btn:hover{
+background:white;
+transform:scale(1.1);
+}
+
+.insta-id{
+margin-top:10px;
+color:#00ff88;
+font-size:18px;
+}
+
+/* Footer */
+
+footer{
+margin-top:40px;
+padding:20px;
+background:#0f0f0f;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img src="profile.jpg" class="profile">
+
+<h1>Akhilesh Saini</h1>
+
+<p class="tagline">
+Green Lover 💚 | Football ⚽ | Cooking 🍳
+</p>
+
+</header>
+
+<div class="section">
+
+<div class="card">
+<h2>🏍 Dream Bike</h2>
+<p>Kawasaki Ninja H2R</p>
+</div>
+
+<div class="card">
+<h2>🟢 Personal Bike</h2>
+<p>Royal Enfield Bullet</p>
+</div>
+
+<div class="card">
+<h2>⚽ Hobby</h2>
+<p>Football</p>
+</div>
+
+<div class="card">
+<h2>🍳 Hobby</h2>
+<p>Cooking</p>
+</div>
+
+<div class="card">
+<h2>🥦 Favourite Food</h2>
+<p>Aloo Gobhi</p>
+</div>
+
+<div class="card">
+<h2>📍 Address</h2>
+<p>  India  </p>
+</div>
+
+<div class="card">
+
+<h2>📸 Instagram</h2>
+
+<a class="insta-btn"
+href="https://www.instagram.com/_akhilesh_36"
+target="_blank">
+Follow
+</a>
+
+<div class="insta-id">
+@_akhilesh_36
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Akhilesh Saini
+
+</footer>
+
+</body>
+</html>
